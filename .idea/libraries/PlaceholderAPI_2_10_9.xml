@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="Vault">
+  <library name="PlaceholderAPI-2.10.9">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Downloads/Vault.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/PlaceholderAPI-2.10.9.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

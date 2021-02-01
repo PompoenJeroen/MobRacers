@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="Vault">
+  <library name="MCJukebox">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Downloads/Vault.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/MCJukebox.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
