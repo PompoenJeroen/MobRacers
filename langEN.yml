@@ -1,4 +1,4 @@
-prefix: "&f&lMob&2&lRacers &f&l> "
+prefix: "&6&lMobRacers2 &7&l> "
 
 separator-cantselectvehicle: "&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-"
 separator-selectvehicle: "&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-"
@@ -19,10 +19,12 @@ standby-status: There are not enough players to begin.
 standby-notenoughtplayers: "&cThere are not enough players to begin."
 standby-notenoughtplayerstocontinue: "&cThere are not enough players to continue."
 
-standby-board-header: "&f&lMob&2&lRacers"
-standby-board: " \n&cNot enough\n&cplayers\n&cto begin\n  "
+standby-board-header: "&6&lMobRacers"
+standby-board1: "&cThere are not"
+standby-board2: "&cenough players"
+standby-board3: "&cto begin."
 
-standby-tabheader: "&f[&lMob&2&lRacers&f]"
+standby-tabheader: "&6&l[MobRacers]"
 standby-tabfooter: "&cThere are not enough players to begin."
 
 arenaselect-startorjoin: It's now the time to vote for the arena of your choice.
@@ -34,11 +36,11 @@ arenaselect-status: The players are currently voting for their arena.
 arenaselect-timer: "&7The vehicle selection will begin in &a<time> &7second<plural>."
 arenaselect-arenaselected: "&eThe arena will be &f&l<arena> &e!"
 
-arenaselect-tabheader: "&f[&lMob&2&lRacers&f]"
+arenaselect-tabheader: "&6&l[MobRacers]"
 arenaselect-tabfooter-novote: "&ePlease vote for your favorite arena"
 arenaselect-tabfooter-voted: "&aYou voted for the arena <arena>"
 
-arenaselect-board-header: "&f&lMob&2&lRacers"
+arenaselect-board-header: "&6&lMobRacers"
 arenaselect-board-arena: "&3&lVoted arena:"
 arenaselect-board-arenaauthor: "&a&lAuthor:"
 arenaselect-board-othervotes: "&6&lVotes:"
@@ -46,11 +48,11 @@ arenaselect-board-othervotes: "&6&lVotes:"
 arenaselect-gui-inv: "§2§lSelect your arena !"
 arenaselect-gui-item: "§a§lClick to select an arena"
 
-vehicleselect-tabheader: "&f[&lMob&2&lRacers&f]"
+vehicleselect-tabheader: "&6&l[MobRacers]"
 vehicleselect-tabfooter-novehicle: "&ePlease choose a vehicle for the next race"
 vehicleselect-tabfooter-selected: "&aYou chose the vehicle <vehicle>"
 
-vehicleselect-board-header: "&f&lMob&2&lRacers"
+vehicleselect-board-header: "&6&lMobRacers"
 vehicleselect-board-arena: "&3&lArena:"
 vehicleselect-board-vehicles: "&e&lVehicles:"
 vehicleselect-board-selectedvehicle: "&c&lYours:"
@@ -105,7 +107,7 @@ game-board-item: "&a&lItem:"
 game-board-ranking: "&6&lRanking:"
 game-board-laps: (Lap <current> of <laps>)
 
-game-tabheader: "&f[&lMob&2&lRacers&f]"
+game-tabheader: "&f[&6&lMobRacers]"
 game-tabfooter: "&a&l<players> player<plural-player> in game, <spectators> spectator<plural-spectator>"
 
 command-invalid-permission: "&cYou do not have the permission to perform this command."
@@ -409,6 +411,10 @@ achievement-gamesplayed-name-3: Amateur
 achievement-gamesplayed-name-2: Little player
 achievement-gamesplayed-name-1: First race !
 
+achievement-ocelot-desc: 'Play # race(s) in total'
+achievement-ocelot-name: Fishy Business
+achievement-ocelot-unlock: "&a&lYou unlocked the Ocelot vehicle !"
+
 achievement-cavespider-desc: 'Win # games with the spider'
 achievement-cavespider-name: Spider Maniac
 achievement-cavespider-unlock: "&a&lYou unlocked the Cave Spider vehicle !"
@@ -456,7 +462,7 @@ achievement-discwait-unlock: "&a&lYou unlocked the Wait music disc !"
 item-fakeitem: Fake Item
 item-groundpound: Earthquake
 item-missile: Missile
-item-shield: Shield
+item-shield: Super Star
 item-sugar: Sugar
 item-wall: Wall
 item-bomb: Bomb
@@ -465,20 +471,20 @@ item-cloud: Cloud
 item-fireball: "Fireball"
 
 item-special-cow: Cow Rush
-item-special-guardian: Ocean Terror
+item-special-guardian: Boo
 item-special-donkey: Fat Butt
-item-special-pig: Mudbath
+item-special-pig: Leap
 item-special-wolf: Rage
 item-special-chicken: Egg Cannon
-item-special-horse: Knight
-item-special-undeadhorse: Zombification
-item-special-skeletonhorse: Bone Bow
+item-special-horse: Sword
+item-special-undeadhorse: Lightning
+item-special-skeletonhorse: Bow
 item-special-slime: Sticky Trap
 item-special-magmacube: Ghost Rider
 item-special-ocelot: Pampering
-item-special-spider: Slingshot
+item-special-spider: Teleport
 item-special-cavespider: Venom
-item-special-squid: Darkness
+item-special-squid: Squid
 item-special-supersheep: Rainbow
 item-special-sheep: Chop Chop Chop
 item-special-mushroomcow: Corruption
@@ -488,6 +494,7 @@ item-special-babycow: Moomoo Milk
 item-special-elderguardian: Frozen Cage
 item-special-minecart: Mega-Pickaxe
 item-special-block: Build Master
+item-special-zombie: Undead
 
 item-special-wolf-title: "&4Hit your opponents to increase the rage !"
 item-special-rabbit-title: "&3Jump !"
@@ -605,7 +612,13 @@ vehicle-block-desc: '&e&lDo you even build ?'
 vehicle-babycow-name: Baby Cow
 vehicle-babycow-desc: "&e&lTake a good glass of milk!"
 
-sign-header: "&f&lMob&2&lRacers"
+vehicle-zombie-name: Zombie
+vehicle-zombie-desc: "&e&lEat them alive!"
+vehicle-creeper-name: Creeper
+vehicle-creeper-desc: "&eSneak up to them from behind!"
+special-item-creeper: Nuke
+item-lightning: Lightning
+sign-header: "&6&lMobRacers2"
 sign-join: "&a&lJoin"
 sign-leave: "&4&lLeave"
 sign-stats: "&9&lStats"
