@@ -6,6 +6,8 @@ import java.util.List;
 
 import me.winterguardian.core.Core;
 import me.winterguardian.core.command.*;
+import me.winterguardian.core.command.JoinGameSubCommand;
+import me.winterguardian.core.command.LeaveGameSubCommand;
 import me.winterguardian.core.game.state.StateGame;
 import me.winterguardian.mobracers.CourseMessage;
 import me.winterguardian.mobracers.MobRacersConfig;
@@ -106,12 +108,6 @@ public class MobRacersCommand extends CommandSplitter
 	public Collection<Permission> getOtherPermissions()
 	{
 		return Arrays.asList(MobRacersPlugin.VIP, MobRacersPlugin.STAFF, MobRacersPlugin.ADMIN, MobRacersPlugin.ALL_UNLOCKED, MobRacersPlugin.PLAY);
-	}
-
-	@Override
-	public String getUsage()
-	{
-		return CourseMessage.COMMAND_INVALID_ARGUMENT.toString() + " §f/mobracers help";
 	}
 
 }

@@ -20,7 +20,6 @@ import me.winterguardian.mobracers.vehicle.Vehicle;
 import me.winterguardian.mobracers.vehicle.VehicleType;
 
 import org.bukkit.Bukkit;
-import org.bukkit.Material;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Hanging;
@@ -32,7 +31,7 @@ public class SetupSubCommand extends SubCommand
 	
 	public SetupSubCommand(MobRacersGame game)
 	{
-		super("setup", Arrays.asList("settings", "option", "options", "réglages", "reglages", "paramètres", "parametres", "config", "configuration"), MobRacersPlugin.ADMIN, CourseMessage.COMMAND_INVALID_PERMISSION.toString(), "§c"+ CourseMessage.COMMAND_USAGE + ": §f/mobracers setup");
+		super("setup", Arrays.asList("settings", "option", "options", "réglages", "reglages", "paramètres", "parametres", "config", "configuration"), MobRacersPlugin.ADMIN, CourseMessage.COMMAND_INVALID_PERMISSION.toString(), "§c"+ CourseMessage.COMMAND_USAGE + ": §f/mobracers config");
 		this.game = game;
 	}
 
@@ -117,10 +116,6 @@ public class SetupSubCommand extends SubCommand
 			CourseMessage.COMMAND_CONFIG_HELP10.say(sender);
 			CourseMessage.COMMAND_CONFIG_HELP11.say(sender);
 			CourseMessage.COMMAND_CONFIG_HELP12.say(sender);
-			CourseMessage.COMMAND_CONFIG_HELP13.say(sender);
-			CourseMessage.COMMAND_CONFIG_HELP14.say(sender);
-			CourseMessage.COMMAND_CONFIG_HELP15.say(sender);
-			CourseMessage.COMMAND_CONFIG_HELP16.say(sender);
 			return true;
 		}
 
@@ -320,91 +315,6 @@ public class SetupSubCommand extends SubCommand
 			CourseMessage.COMMAND_CONFIG_VEHICLEREMOVED.say(sender);
 			return true;
 		}
-
-		if(args[0].equalsIgnoreCase("setleaveitem"))
-		{
-			if(!(sender instanceof Player))
-			{
-				CourseMessage.COMMAND_INVALID_SENDER.say(sender);
-				return true;
-			}
-
-			Player player = (Player)sender;
-
-			if(player.getItemInHand() == null || player.getItemInHand().getType() == Material.AIR)
-			{
-				CourseMessage.COMMAND_CONFIG_NOITEM.say(sender);
-				return true;
-			}
-
-			((MobRacersSetup)game.getSetup()).setLeaveItem(player.getItemInHand());
-			CourseMessage.COMMAND_CONFIG_ITEMSET.say(sender);
-			return true;
-		}
-
-		if(args[0].equalsIgnoreCase("setarenaitem"))
-		{
-			if(!(sender instanceof Player))
-			{
-				CourseMessage.COMMAND_INVALID_SENDER.say(sender);
-				return true;
-			}
-
-			Player player = (Player)sender;
-
-			if(player.getItemInHand() == null || player.getItemInHand().getType() == Material.AIR)
-			{
-				CourseMessage.COMMAND_CONFIG_NOITEM.say(sender);
-				return true;
-			}
-
-			((MobRacersSetup)game.getSetup()).setArenaItem(player.getItemInHand());
-			CourseMessage.COMMAND_CONFIG_ITEMSET.say(sender);
-			return true;
-		}
-
-		if(args[0].equalsIgnoreCase("setvehicleitem"))
-		{
-			if(!(sender instanceof Player))
-			{
-				CourseMessage.COMMAND_INVALID_SENDER.say(sender);
-				return true;
-			}
-
-			Player player = (Player)sender;
-
-			if(player.getItemInHand() == null || player.getItemInHand().getType() == Material.AIR)
-			{
-				CourseMessage.COMMAND_CONFIG_NOITEM.say(sender);
-				return true;
-			}
-
-			((MobRacersSetup)game.getSetup()).setVehicleItem(player.getItemInHand());
-			CourseMessage.COMMAND_CONFIG_ITEMSET.say(sender);
-			return true;
-		}
-
-		if(args[0].equalsIgnoreCase("setspectatoritem"))
-		{
-			if(!(sender instanceof Player))
-			{
-				CourseMessage.COMMAND_INVALID_SENDER.say(sender);
-				return true;
-			}
-
-			Player player = (Player)sender;
-
-			if(player.getItemInHand() == null || player.getItemInHand().getType() == Material.AIR)
-			{
-				CourseMessage.COMMAND_CONFIG_NOITEM.say(sender);
-				return true;
-			}
-
-			((MobRacersSetup)game.getSetup()).setSpectatorItem(player.getItemInHand());
-			CourseMessage.COMMAND_CONFIG_ITEMSET.say(sender);
-			return true;
-		}
-
 		return false;
 	}
 
@@ -412,7 +322,7 @@ public class SetupSubCommand extends SubCommand
 	public List<String> onSubTabComplete(CommandSender sender, String label, String[] args)
 	{
 		if(args.length == 1)
-			return TextUtil.getStringsThatStartWith(args[0], Arrays.asList("setlobby", "setexit", "setregion", "vehiclelist", "setvehicle", "tpvehicle", "resetvehicles", "testvehicles", "killvehicles", "removevehicle", "permissions", "setleaveitem", "setarenaitem", "setvehicleitem", "setspectatoritem"));
+			return TextUtil.getStringsThatStartWith(args[0], Arrays.asList("setlobby", "setexit", "setregion", "vehiclelist", "setvehicle", "tpvehicle", "resetvehicles", "testvehicles", "killvehicles", "removevehicle", "permissions"));
 
 		if(args.length == 2 && (args[0].equalsIgnoreCase("setvehicle") || args[0].equalsIgnoreCase("tpvehicle")) || args[0].equalsIgnoreCase("removevehicle"))
 		{

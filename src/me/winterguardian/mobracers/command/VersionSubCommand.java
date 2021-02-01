@@ -36,18 +36,19 @@ public class VersionSubCommand extends AsyncSubCommand
 			else
 				version = "§eVersion " + version + " is available on Spigot !";
 		else
-			version = "§cFailed to find latest version";
+			version = "§eThe plugin is up to date!";
 		
 		
-		sender.sendMessage("§f§lMob§2§lRacers §f§l> §fPlugin designed by WinterGuardian and now Maintained and updated by MajorProbes ");
+		sender.sendMessage("§6§lMobRacers2");
+		sender.sendMessage("");
+		sender.sendMessage("§6Author: §furlocaluwu");
 		sender.sendMessage("§6Version: §r" + MobRacersPlugin.getPlugin().getDescription().getVersion());
+		sender.sendMessage("");
 		sender.sendMessage(version);
-		
-		if(sender instanceof Player)
-			JsonUtil.sendJsonMessage((Player) sender, JsonUtil.toJson("§3Click me to visit the spigot MobRacers page.", null, null, "open_url", "\"https://www.spigotmc.org/resources/mobracers-mariokart-on-mobs-now-free-1-8-8.20626//\""));
 	
 	}
 
+	
 	public static String getLatestVersion()
 	{
 		try
@@ -59,7 +60,7 @@ public class VersionSubCommand extends AsyncSubCommand
 			return null;
 		}
 	}
-
+	
 	public static String getLastVersionFetch()
 	{
 		return version;
