@@ -7,8 +7,8 @@
 #Pour utilisez ce fichier comme fichier de langue afin de pouvoir jouer à MobRacers en français, supprimez lang.yml et renommez langFR.yml en lang.yml.
 #Vous pouvez apportez toutes les modifications que vous souhaitez pour adapter le jeu à votre serveur ! :)
 #
-prefix: "&f&lMob&2&lRacers &f&l> "
-
+prefix: "&6&lMobRacers2 &7&l> "
+item-lightning: Lightning
 separator-cantselectvehicle: "&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-"
 separator-selectvehicle: "&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-"
 separator-achievement: "&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-"
@@ -20,6 +20,10 @@ join-gamenotready: "&cLe jeu n'est pas encore ouvert, merci de votre patience pe
 join-gameclosed: "&cLe jeu est fermé temporairement."
 join-maxplayers: "&cDésolé, vous ne pouvez pas rejoindre puisque le jeu est plein."
 join-someonehasjoin: "<player> est entré en MobRacers, cliquez ici pour rejoindre !"
+
+vehicle-creeper-name: Creeper
+vehicle-creeper-desc: "&eSneak up to them from behind!"
+special-item-creeper: Nuke
 
 leave-notingame: "&cVous n'êtes pas en jeu."
 leave: "&r<player> &ca quitté la partie."
@@ -605,6 +609,10 @@ vehicle-block-desc: "&e&lSavez-vous construire ?"
 
 vehicle-babycow-name: "Bébé Vache"
 vehicle-babycow-desc: "&e&lPrenez un bon verre de lait !"
+
+vehicle-zombie-name: Zombie
+vehicle-zombie-desc: "&e&lEat them alive!"
+item-special-zombie: Undead
 
 sign-header: "&f&lMob&2&lRacers"
 sign-join: "&a&lRejoindre"

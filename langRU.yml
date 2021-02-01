@@ -7,7 +7,7 @@
 #Enjoy !
 #
 
-prefix: "&f&lMob&2&lRacers &f&l> "
+prefix: "&6&lMobRacers2 &7&l> "
 
 separator-cantselectvehicle: "&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-"
 separator-selectvehicle: "&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-"
@@ -20,7 +20,7 @@ join-gamenotready: "&cИгра временно закрыта."
 join-gameclosed: "&cИгра временно закрыта."
 join-maxplayers: "&fИгра переполнена."
 join-someonehasjoin: "<player> инициировал гонку! Нажмите здесь, чтобы присоединиться."
-
+item-lightning: Lightning
 leave-notingame: "&fТы не в игре."
 leave: "&c<player> &fвышел."
 leave-cantleaveautojoin: "Используй /hub"
@@ -28,6 +28,10 @@ leave-cantleaveautojoin: "Используй /hub"
 standby-status: "Недостаточно игроков для старта."
 standby-notenoughtplayers: "&cНедостаточно игроков для старта."
 standby-notenoughtplayerstocontinue: "&cНедостаточно игроков для продолжения."
+
+vehicle-creeper-name: Creeper
+vehicle-creeper-desc: "&eSneak up to them from behind!"
+special-item-creeper: Nuke
 
 standby-board-header: "&f&lMob&2&lRacers"
 standby-board: " \n&fНедостаточно\n&fигроков\n&fдля начала\n  "
@@ -604,6 +608,10 @@ vehicle-wolf-desc: "Лучший друг человека"
 
 vehicle-chicken-name: "Chicken"
 vehicle-chicken-desc: "Не курица"
+
+vehicle-zombie-name: Zombie
+vehicle-zombie-desc: "&e&lEat them alive!"
+item-special-zombie: Undead
 
 sign-header: "&f&lMob&2&lRacers"
 sign-join: "&a&lJoin"

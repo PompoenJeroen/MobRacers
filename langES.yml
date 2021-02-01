@@ -3,19 +3,23 @@
 #
 #Enjoy ! ¡diviértete!
 #
-prefix: "&f&lMob&2&lRacers &f&l> "
+prefix: "&6&lMobRacers2 &7&l> "
 
 separator-cantselectvehicle: "&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-"
 separator-selectvehicle: "&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-"
 separator-achievement: "&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-"
 separator-purchase: "&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-"
-
+item-lightning: Lightning
 join: "&r<player> &ase unio al juego."
 join-alreadyingame: "&cYa estas en juego."
 join-gamenotready: "&cEl juego no esta totalmente configurado."
 join-gameclosed: "&cel juego esta cerrado."
 join-maxplayers: "&cEl juego esta completo, espera a que acabe."
 join-someonehasjoin: "<player> Ha iniciado una partida, Haz clic aqui para unirte."
+
+vehicle-creeper-name: Creeper
+vehicle-creeper-desc: "&eSneak up to them from behind!"
+special-item-creeper: Nuke
 
 leave-notingame: "&cNo estas en juego."
 leave: "&r<player> &cabandono el juego."
@@ -600,6 +604,10 @@ vehicle-block-desc: '&e&lA veces hay que construir'
 
 vehicle-babycow-name: Baby Cow
 vehicle-babycow-desc: "&e&lTomate un buen vaso de leche!"
+
+vehicle-zombie-name: Zombie
+vehicle-zombie-desc: "&e&lEat them alive!"
+item-special-zombie: Undead
 
 sign-header: "&f&lMob&2&lRacers"
 sign-join: "&a&lUnirte"

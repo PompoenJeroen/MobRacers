@@ -6,7 +6,7 @@
 #To use this file as the lang file, delete lang.yml and rename langDE.yml to lang.yml
 #Enjoy !
 #
-prefix: '&f&lMob&2&lRacers &f&l> '
+prefix: "&6&lMobRacers2 &7&l> "
 separator-cantselectvehicle: '&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-'
 separator-selectvehicle: '&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-'
 separator-achievement: '&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-'
@@ -24,6 +24,10 @@ standby-notenoughtplayers: '&cEs sind nicht ausreichend Spieler online um die Ru
   zu starten!'
 standby-notenoughtplayerstocontinue: '&cEs sind nicht genügend Spieler online um die
   Runde fortzuführen!'
+
+vehicle-creeper-name: Creeper
+vehicle-creeper-desc: "&eSneak up to them from behind!"
+special-item-creeper: Nuke
 
 standby-board-header: '&dRacers'
 standby-board: " \n&cWarte auf\n&cSpieler\n&czum Start\n  "
@@ -409,6 +413,7 @@ item-bomb: Bombe
 item-grapplinghook: Grappling Hook
 item-cloud: Gewitterwolke
 item-fireball: Fireball
+item-lightning: Lightning
 item-special-cow: Cow Rush
 item-special-guardian: Ocean Terror
 item-special-donkey: Fat Butt
@@ -517,6 +522,9 @@ vehicle-block-name: Block
 vehicle-block-desc: '&7Hast du damit schonmal was gebaut ?'
 vehicle-babycow-name: Baby Kuh
 vehicle-babycow-desc: '&7Nimm dir ein Glas voll Milch!'
+vehicle-zombie-name: Zombie
+vehicle-zombie-desc: "&e&lEat them alive!"
+item-special-zombie: Undead
 sign-header: '&f&lMob&2&lRacers'
 sign-join: '&a&lJoin'
 sign-leave: '&4&lLeave'
