@@ -25,7 +25,7 @@ public class MellohiAchievement extends CourseAchievement
 		if(!((MobRacersConfig)MobRacersPlugin.getGame().getConfig()).enableStats())
 			return true;
 		
-		return CourseStats.get(p).getVehicleVictories(VehicleType.UNDEAD_HORSE.name()) >= victories;
+		return CourseStats.get(p).getVehicleVictories(VehicleType.OCELOT.name()) >= victories;
 	}
 
 	@Override
@@ -53,7 +53,7 @@ public class MellohiAchievement extends CourseAchievement
 	@Override
 	public String getProgression(Player p)
 	{
-		return "(" + CourseStats.get(p).getVehicleVictories(VehicleType.UNDEAD_HORSE.name()) + " / " + victories + ")";
+		return "(" + CourseStats.get(p).getVehicleVictories(VehicleType.OCELOT.name()) + " / " + victories + ")";
 	}
 
 }

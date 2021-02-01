@@ -6,7 +6,6 @@ import java.util.List;
 import me.winterguardian.mobracers.CourseMessage;
 import me.winterguardian.mobracers.stats.achivements.BlockAchievement;
 import me.winterguardian.mobracers.stats.achivements.CaveSpiderAchievement;
-import me.winterguardian.mobracers.stats.achivements.DonkeyAchievement;
 import me.winterguardian.mobracers.stats.achivements.ElderGuardianAchievement;
 import me.winterguardian.mobracers.stats.achivements.GamesplayedAchievement;
 import me.winterguardian.mobracers.stats.achivements.MagmaCubeAchievement;
@@ -41,7 +40,6 @@ public abstract class CourseAchievement
 	public static final CourseAchievement GAMESPLAYED1 = new GamesplayedAchievement(1, 50, "§e§l" + CourseMessage.ACHIEVEMENT_GAMESPLAYED_NAME_1.toString(), GAMESPLAYED25);
 	
 	public static final CourseAchievement COW_PLAY = new MushroomCowAchievement(80);
-	public static final CourseAchievement HORSE_PASSINGS = new DonkeyAchievement(500);
 	public static final CourseAchievement SHEEP_BESTTIME = new SuperSheepAchievement(3);
 	public static final CourseAchievement SILVERFISH_ITEMS = new SilverfishAchievement(2000);
 	public static final CourseAchievement SLIME_BESTTIME = new MagmaCubeAchievement(2);
@@ -49,9 +47,7 @@ public abstract class CourseAchievement
 	public static final CourseAchievement OCELOT_PLAYED = new OcelotAchievement(100);
 	
 	public static final CourseAchievement GUARDIAN_WIN = new ElderGuardianAchievement(40);
-	public static final CourseAchievement BLOCK_BUILD = new BlockAchievement();
-	
-	public static final CourseAchievement UNDEADHORSE_WIN = new MellohiAchievement(15);
+
 	public static final CourseAchievement PIG_PASSINGS = new StalAchievement(200);
 	public static final CourseAchievement WOLF_PLAY = new WaitAchievement(30);
 	
