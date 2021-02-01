@@ -7,11 +7,9 @@ import me.winterguardian.core.util.ReflectionUtil;
 
 public enum CustomEntityType
 {
-	RIDEABLE_BOAT("Boat", 41, "<base>.rideable.<version>.RideableBoat"),
 
 	RIDEABLE_SPIDER("Spider", 52, "<base>.rideable.<version>.RideableSpider"),
 
-	RIDEABLE_CREEPER("Creeper", 50, "<base>.rideable.<version>.RideableCreeper"),
 	RIDEABLE_ZOMBIE("Zombie", 54, "<base>.rideable.<version>.RideableZombie"),
 	RIDEABLE_SLIME("Slime", 55, "<base>.rideable.<version>.RideableSlime"),
 
@@ -30,9 +28,8 @@ public enum CustomEntityType
 	RIDEABLE_WOLF("Wolf", 95, "<base>.rideable.<version>.RideableWolf"),
 	RIDEABLE_MUSHROOM_COW("MushroomCow", 96, "<base>.rideable.<version>.RideableMushroomCow"),
 
-	RIDEABLE_OCELOT("Ozelot", 98, "<base>.rideable.<version>.RideableOcelot"),
+	RIDEABLE_OCELOT("Ocelot", 98, "<base>.rideable.<version>.RideableOcelot"),
 
-	RIDEABLE_HORSE("EntityHorse", 100, "<base>.rideable.<version>.RideableHorse"),
 	RIDEABLE_RABBIT("Rabbit", 101, "<base>.rideable.<version>.RideableRabbit"),
 
 	NPC_VILLAGER("Villager", 120, "<base>.npc.<version>.NPCVillager"),
