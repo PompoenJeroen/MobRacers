@@ -2,17 +2,17 @@ vehicle:
   cow:
     price: 2000
   slime:
-    price: 2000
+    price: 3000
   rabbit:
-    price: 2000
+    price: 4000
   squid:
-    price: 2000
-  undead_horse:
-    price: 2000
+    price: 5000
   wolf:
-    price: 2000
+    price: 6000
+  zombie:
+    price: 7000
   chicken:
-    price: 2000
+    price: 8000
 disc:
   chirp:
     price: 200
