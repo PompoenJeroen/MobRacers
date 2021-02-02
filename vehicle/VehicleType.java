@@ -21,6 +21,7 @@ import me.winterguardian.mobracers.vehicle.types.SpiderVehicle;
 import me.winterguardian.mobracers.vehicle.types.SquidVehicle;
 import me.winterguardian.mobracers.vehicle.types.SuperSheepVehicle;
 import me.winterguardian.mobracers.vehicle.types.WolfVehicle;
+import me.winterguardian.mobracers.vehicle.types.SkeletonVehicle;
 
 import org.bukkit.entity.Cow;
 import org.bukkit.entity.Entity;
@@ -30,6 +31,7 @@ import org.bukkit.entity.Horse;
 import org.bukkit.entity.Horse.Variant;
 import org.bukkit.entity.Player;
 import me.winterguardian.mobracers.vehicle.types.ZombieVehicle;
+import me.winterguardian.mobracers.vehicle.types.EndermanVehicle;
 
 public enum VehicleType
 {
@@ -62,8 +64,10 @@ public enum VehicleType
 	WOLF(WolfVehicle.class, getConditionByEntityType(EntityType.WOLF)),
 	CAVE_SPIDER(CaveSpiderVehicle.class, getConditionByEntityType(EntityType.CAVE_SPIDER)),
 	OCELOT(OcelotVehicle.class, getConditionByEntityType(EntityType.OCELOT)), 
-	SILVERFISH(SilverfishVehicle.class, getConditionByEntityType(EntityType.SILVERFISH)), 
+	SILVERFISH(SilverfishVehicle.class, getConditionByEntityType(EntityType.SILVERFISH)),
 
+	SKELETON(SkeletonVehicle.class, getConditionByEntityType(EntityType.SKELETON)),
+  	ENDERMAN(EndermanVehicle.class, getConditionByEntityType(EntityType.ENDERMAN)),
 	SLIME(SlimeVehicle.class, getConditionByEntityType(EntityType.SLIME)),
 	MAGMA_CUBE(MagmaCubeVehicle.class, getConditionByEntityType(EntityType.MAGMA_CUBE)),
 	SPIDER(SpiderVehicle.class, getConditionByEntityType(EntityType.SPIDER)),
