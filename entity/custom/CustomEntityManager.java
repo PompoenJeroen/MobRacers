@@ -4,10 +4,6 @@ import me.winterguardian.core.DynamicComponent;
 import me.winterguardian.core.entity.custom.CustomEntityType;
 import org.bukkit.plugin.Plugin;
 
-/**
- *
- * Created by 1541869 on 2015-12-03.
- */
 public class CustomEntityManager extends DynamicComponent
 {
 	@Override
