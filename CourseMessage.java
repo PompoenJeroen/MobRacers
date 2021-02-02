@@ -590,7 +590,15 @@ public class CourseMessage extends LangMessage
 	
 	VEHICLE_HORSE_NAME = new CourseMessage("vehicle-horse-name", false),
 	VEHICLE_HORSE_DESC = new CourseMessage("vehicle-horse-desc", false),
-	
+
+	VEHICLE_ENDERMAN_NAME = new CourseMessage("vehicle-enderman-name", false),
+
+	VEHICLE_ENDERMAN_DESC = new CourseMessage("vehicle-enderman-desc", false),
+
+	VEHICLE_SKELETON_NAME = new CourseMessage("vehicle-skeleton-name", false),
+
+	VEHICLE_SKELETON_DESC = new CourseMessage("vehicle-skeleton-desc", false),
+
 	VEHICLE_MAGMACUBE_NAME = new CourseMessage("vehicle-magmacube-name", false),
 	VEHICLE_MAGMACUBE_DESC = new CourseMessage("vehicle-magmacube-desc", false),
 	
