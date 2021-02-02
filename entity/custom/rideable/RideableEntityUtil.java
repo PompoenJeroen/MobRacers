@@ -48,7 +48,11 @@ public class RideableEntityUtil
 		case FALLING_BLOCK:
 			className = "RideableBlock";
 			break;
-			
+
+		case ENDERMAN:
+			className = "RideableEnderman";
+			break;
+
 		case GUARDIAN:
 			className = "RideableGuardian";
 			break;
@@ -91,6 +95,10 @@ public class RideableEntityUtil
 			
 		case SLIME:
 			className = "RideableSlime";
+			break;
+
+		case SKELETON:
+			className = "RideableSkeleton";
 			break;
 			
 		case SPIDER:
