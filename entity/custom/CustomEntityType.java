@@ -8,6 +8,10 @@ import me.winterguardian.core.util.ReflectionUtil;
 public enum CustomEntityType
 {
 
+	RIDEABLE_SKELETON("Skeleton", 51, "<base>.rideable.<version>.RideableSkeleton"),
+
+	RIDEABLE_ENDERMAN("Enderman", 58, "<base>.rideable.<version>.RideableEnderman"),
+
 	RIDEABLE_SPIDER("Spider", 52, "<base>.rideable.<version>.RideableSpider"),
 
 	RIDEABLE_ZOMBIE("Zombie", 54, "<base>.rideable.<version>.RideableZombie"),
