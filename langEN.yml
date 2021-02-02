@@ -549,6 +549,9 @@ vehicle-cow-desc: "&e&lCharge brutally your opponents!"
 vehicle-donkey-name: Donkey
 vehicle-donkey-desc: "&e&lUse your heavy weight!"
 
+vehicle-enderman-name: Enderman
+vehicle-enderman-desc: 'Now you see me, and now you do not.'
+
 vehicle-elderguardian-name: Elder Guardian
 vehicle-elderguardian-desc: '&e&lWise choice, kid.'
 
@@ -581,6 +584,9 @@ vehicle-sheep-desc: "&e&lDo not be afraid to shear it!"
 
 vehicle-silverfish-name: Silverfish
 vehicle-silverfish-desc: "&e&lIt gets you everywhere."
+
+vehicle-skeleton-name: Skeleton
+vehicle-skeleton-desc: 'You only need bare bones to win.'
 
 vehicle-skeletonhorse-name: Skeleton Horse
 vehicle-skeletonhorse-desc: "&e&lThe victory is found in the soul!"
