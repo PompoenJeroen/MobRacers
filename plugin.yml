@@ -1,6 +1,6 @@
 name: MobRacers2
 main: me.winterguardian.mobracers.MobRacersPlugin
-version: 1.3.04.002
+version: 1.4.00.108
 description: A minecraft racing game with mobs as vehicles.
 author: urlocaluwu
 softdepend: [Core, PlaceHolderAPI, Vault]
