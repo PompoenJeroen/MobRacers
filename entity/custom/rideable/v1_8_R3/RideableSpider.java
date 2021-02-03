@@ -1,153 +1,79 @@
 package me.winterguardian.core.entity.custom.rideable.v1_8_R3;
 
-import java.lang.reflect.Field;
-
 import me.winterguardian.core.entity.custom.rideable.RideableEntity;
 import net.minecraft.server.v1_8_R3.*;
-import org.bukkit.craftbukkit.v1_8_R3.CraftWorld;
 
-public class RideableSpider extends EntityCaveSpider implements RideableEntity
-{
-	private float climbHeight, jumpHeight, jumpThrust, speed, backwardSpeed, sidewaySpeed, acceleration;
+import java.lang.reflect.Field;
 
-	public RideableSpider(org.bukkit.World world)
-	{
-		this(((CraftWorld)world).getHandle());
-	}
+public class RideableSpider extends EntitySpider implements RideableEntity{
 
-	public RideableSpider(World world)
-	{
+	private float speed;
+
+	protected Field FIELD_JUMP = null;
+
+	public RideableSpider(World world) {
 		super(world);
-		this.climbHeight = 1f;
-		this.jumpHeight = 1f;
-		this.jumpThrust = 1f;
 		this.speed = 1f;
-		this.backwardSpeed = 0.25f;
-		this.sidewaySpeed = 0.4f;
-		this.acceleration = 1.05f;
-		
-		this.goalSelector = new PathfinderGoalSelector((world != null) && (world.methodProfiler != null) ? world.methodProfiler : null);
-		this.targetSelector = new PathfinderGoalSelector((world != null) && (world.methodProfiler != null) ? world.methodProfiler : null);
 
-		this.getAttributeInstance(GenericAttributes.maxHealth).setValue(20.0D);
-		this.setHealth(20f);
+		if (FIELD_JUMP == null) {
+			try {
+				FIELD_JUMP = EntityLiving.class.getDeclaredField("aY");
+				FIELD_JUMP.setAccessible(true);
+			} catch (NoSuchFieldException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 
 	@Override
-	public void aA()
-	{
-		this.H = true;
-		this.fallDistance = 0;
-	}
-	
-	@Override
-	public void g(float sideMot, float forMot)
-	{
-		if(this.passenger == null || !(this.passenger instanceof EntityLiving))
+	public void g(float f, float f1) {
+		if(this.passenger != null && this.passenger instanceof EntityHuman)
 		{
-			this.S = 0.5f; 
-	        super.g(sideMot, forMot);
-	        return;
-	    }
-		
-		this.lastYaw = this.yaw = this.passenger.yaw;
-		this.pitch = this.passenger.pitch * 0.75f;
-		if(this.pitch > 0)
-			this.pitch = 0;
-		this.setYawPitch(this.yaw, this.pitch);
-		this.aK = this.aI = this.yaw;
-	
-		this.S = this.climbHeight; 
-	
-		boolean jump = false;
-		
-		try
-		{
-			Field field = EntityLiving.class.getDeclaredField("aY");
-			field.setAccessible(true);
-			jump = (boolean) field.get(this.passenger);
-		}
-		catch (Exception e)
-		{
-			e.printStackTrace();
-		}
+			this.lastYaw = this.yaw = this.passenger.yaw;
+			this.pitch = this.passenger.pitch * 0.5F;
+			this.setYawPitch(this.yaw, this.pitch);
+			this.aK = this.aI = this.yaw;
+			f = ((EntityLiving)this.passenger).aZ * 0.5F;
+			f1 = ((EntityLiving)this.passenger).ba;
 
-		sideMot = ((EntityLiving) this.passenger).aZ;
-		forMot = ((EntityLiving) this.passenger).ba;
-
-		if (forMot < 0.0F)
-			forMot *= this.backwardSpeed;
-	
-		sideMot *= this.sidewaySpeed;
-	 
-		if(jump)
-			if(this.inWater)
-				this.bG();
-			else if(this.onGround && this.jumpHeight != 0 && this.jumpThrust != 0)
+			if(f1 <= 0.0F)
 			{
-				this.motY = this.jumpHeight / 2;
-				this.motZ = Math.cos(Math.toRadians(-this.yaw)) * this.jumpThrust * forMot; //normal X
-				this.motX = Math.sin(Math.toRadians(-this.yaw)) * this.jumpThrust * forMot; //normal Y
+				f1 *= 0.25F;
+			}
+			try {
+				if (FIELD_JUMP.getBoolean(this.passenger) && this.onGround) {
+					this.motY += 1F;
+					this.ai = true;
+					if (f1 > 0.0F)
+					{
+						float f2 = MathHelper.sin(this.yaw * 3.141593F / 1800F);
+						float f3 = MathHelper.cos(this.yaw * 3.141593F / 300.0F);
+
+						this.motX += -0.4F * f2 * ((EntityInsentient) this).br();
+						this.motZ += 0.4F * f3 * ((EntityInsentient) this).br();
+					}
+				}
+			} catch (IllegalArgumentException | IllegalAccessException e) {
+				e.printStackTrace();
 			}
 
-		this.k(this.speed / 5);
-		super.g(sideMot, forMot);
-	}
-	
-	@Override
-	public boolean k_()
-	{
-		return false;
-	}
+			this.S = 1.0F; this.aM = this.bI() * 0.1F; if(!this.world.isClientSide)
+		{
+			this.k(this.speed / 5);
+			super.g(f, f1);
+		}
 
-	@Override
-	public float getClimbHeight()
-	{
-		return this.climbHeight;
-	}
+			this.aA = this.aB; double d0 = this.locX - this.lastX; double d1 = this.locZ - this.lastZ; float f4 = MathHelper.sqrt(d0 * d0 + d1 * d1) * 4.0F;
+			if(f4 > 1.0F)
+			{
+				f4 = 1.0F;
+			}
 
-	@Override
-	public void setClimbHeight(float climbHeight)
-	{
-		this.climbHeight = climbHeight;
+			this.aB += (f4 - this.aB) * 0.4F; this.aC += this.aB;
+		} else {
+			this.S = 0.5F; this.aM = 0.02F; super.g(f, f1);
+		}
 	}
-
-	@Override
-	public float getJumpHeight()
-	{
-		return this.jumpHeight;
-	}
-
-	@Override
-	public void setJumpHeight(float jumpHeight)
-	{
-		this.jumpHeight = jumpHeight;
-	}
-	
-	@Override
-	public float getJumpThrust()
-	{
-		return this.jumpThrust;
-	}
-
-	@Override
-	public void setJumpThrust(float jumpThrust)
-	{
-		this.jumpThrust = jumpThrust;
-	}
-
-	@Override
-	public float getAcceleration()
-	{
-		return this.acceleration;
-	}
-
-	@Override
-	public void setAcceleration(float acceleration)
-	{
-		this.acceleration = acceleration;
-	}
-
 	@Override
 	public float getSpeed()
 	{
@@ -158,29 +84,5 @@ public class RideableSpider extends EntityCaveSpider implements RideableEntity
 	public void setSpeed(float speed)
 	{
 		this.speed = speed;
-	}
-
-	@Override
-	public float getBackwardSpeed()
-	{
-		return this.backwardSpeed;
-	}
-
-	@Override
-	public void setBackwardSpeed(float backwardSpeed)
-	{
-		this.backwardSpeed = backwardSpeed;
-	}
-
-	@Override
-	public float getSidewaySpeed()
-	{
-		return this.sidewaySpeed;
-	}
-
-	@Override
-	public void setSidewaySpeed(float sidewaySpeed)
-	{
-		this.sidewaySpeed = sidewaySpeed;
 	}
 }

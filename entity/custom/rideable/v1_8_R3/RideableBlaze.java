@@ -5,13 +5,13 @@ import net.minecraft.server.v1_8_R3.*;
 
 import java.lang.reflect.Field;
 
-public class RideableChicken extends EntityChicken implements RideableEntity{
+public class RideableBlaze extends EntityBlaze implements RideableEntity{
 
 	private float speed;
 
 	protected Field FIELD_JUMP = null;
 
-	public RideableChicken(World world) {
+	public RideableBlaze(World world) {
 		super(world);
 		this.speed = 1f;
 
